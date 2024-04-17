@@ -86,6 +86,9 @@
     flex-wrap: wrap;
     gap: 30px;
   }
+  .btn-color-2 {
+    margin: 6px;
+}
   .contact-info-container {
     margin: 0;
   }
@@ -94,7 +97,7 @@
     font-size: 1rem;
   }
   .contact-icon {
-    width: 30px;
+    width: 25px;
     height: 25px;
   }
   .experience-sub-title {
@@ -102,6 +105,9 @@
   }
   .logo {
     font-size: 1.5rem;
+  }
+  .project-img {
+    width: 320px;
   }
   .nav-links {
     flex-direction: column;

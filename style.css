@@ -267,6 +267,7 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   width: 160px;
   height: 60px;
+  margin: 6px;
 }
 
 .btn-color-1:hover,
@@ -299,7 +300,6 @@ section {
 .btn-container-project {
   margin-top: 6rem;
 }
-
 /* ABOUT SECTION */
 
 #about {
