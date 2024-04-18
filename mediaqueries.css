@@ -87,6 +87,8 @@
     gap: 30px;
   }
   .btn-color-2 {
+    font-size: 10px;
+    color: black;
     margin: 6px;
 }
   .contact-info-container {
@@ -119,11 +121,15 @@
     height: 46vw;
     justify-content: center;
   }
+  .section__text__p1{
+    font-size: 1.50rem;
+  }
   .section__text__p2 {
     font-size: 1.25rem;
   }
   .title {
-    font-size: 2rem;
+    font-size: 1.76rem;
+
   }
   .text-container {
     text-align: justify;
