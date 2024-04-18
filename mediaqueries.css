@@ -134,4 +134,10 @@
   .text-container {
     text-align: justify;
   }
+  .project-h1-title {
+    font-size: 0.5rem;
+  }
+  .project-h1 {
+    font-size: 0.5rem;
+  }
 }
