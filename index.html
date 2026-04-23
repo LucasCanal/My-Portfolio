@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Lucas Canal | Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -20,6 +20,7 @@
         </ul>
       </div>
     </nav>
+
     <nav id="hamburger-nav">
       <div class="logo">Lucas Canal</div>
       <div class="hamburger-menu">
@@ -28,17 +29,18 @@
           <span></span>
           <span></span>
         </div>
-        <div class="menu-links">
+        <ul class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Habilidades</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
-        </div>
+        </ul>
       </div>
     </nav>
+
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/foto-perfil.png" alt="Lucas Canal foto perfil" />
+        <img src="./assets/foto-perfil.png" alt="Foto de perfil de Lucas Canal" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Olá, eu sou</p>
@@ -51,340 +53,236 @@
           >
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
             Contato
           </button>
         </div>
         <div id="socials-container">
           <img
             src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
+            alt="LinkedIn de Lucas Canal"
             class="icon"
             onclick="location.href='https://www.linkedin.com/in/lucas-canal-felix-9710b1199/'"
           />
           <img
             src="./assets/github.png"
-            alt="My Github profile"
+            alt="GitHub de Lucas Canal"
             class="icon"
             onclick="location.href='https://github.com/LucasCanal'"
           />
         </div>
       </div>
     </section>
+
     <section id="about">
       <p class="section__text__p1">Conheça mais</p>
-      <h1 class="title">Sobre mim</h1>
+      <h2 class="title">Sobre mim</h2>
       <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-me-pic.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
         <div class="about-details-container">
           <div class="about-containers">
+            
             <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Certificação</h3>
-              <p>Oracle University<br><br>Oracle Cloud Infrastructure 2023 Foundations Associate</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
+              <img src="./assets/education.png" alt="Ícone educação" class="icon" />
               <h3>Educação</h3>
-              <p>Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais<br><br>Programação Web Avançado</p>
+              <p>IFMG<br>Prog. Web Avançado</p>
+              <p>Prod. Fonográfica<br>Graduação</p>
             </div>
+    
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="Ícone certificação" class="icon" />
+              <h3>Certificação</h3>
+              <p>Oracle University<br>OCI Foundations</p>
+              <p>ADS<br>Cursando</p>
+            </div>
+    
+            <div class="details-container">
+              <img src="./assets/email.png" alt="Ícone criativo" class="icon" /> <h3>Background</h3>
+              <p>Música & Áudio<br>Mixagem / DJ</p>
+              <p>Fotografia<br>Estética Analógica</p>
+            </div>
+    
           </div>
+          
           <div class="text-container">
             <p>
-              Formado em tecnologia de produção fonográfica e atual desenvolvedor front-end em propósito ao uso da tecnologia aplicada ao desenvolvimento web e testes de novas ferramentas em rede através da produção e elaboração de determinadas etapas do processo criativo, tenho como propósito de expor minhas experiências em todas as atribuições relacionadas a minha função, com o objetivo de integrar empresas e equipes de colaboradores em que possamos ter a oportunidade de desenvolver nossas habilidades e competências, assim, contribuindo para o crescimento profissional de todos.
+              Minha jornada começou no universo da <b>Produção Fonográfica</b>, onde desenvolvi um olhar atento à estética e ao ritmo. Hoje, como desenvolvedor <b>Front-end focado em React e JavaScript</b>, uno essa sensibilidade criativa à precisão do código. 
+              <br><br>
+              Busco construir interfaces que não apenas funcionem, mas que proporcionem experiências fluidas e visualmente impactantes. Sou entusiasta da cultura maker e da fotografia analógica, o que reforça minha atenção aos detalhes em cada projeto que desenvolvo.
             </p>
           </div>
         </div>
       </div>
       <img
         src="./assets/arrow.png"
-        alt="Arrow icon"
+        alt="Seta para próxima seção"
         class="icon arrow"
-        onclick="location.href='./#experience'"
+        onclick="location.href='#experience'"
       />
     </section>
+
     <section id="experience">
-      <p class="section__text__p1">Sobre minhas</p>
-      <h1 class="title">Habilidades</h1>
+      <p class="section__text__p1">Explorar Minhas</p>
+      <h2 class="title">Habilidades</h2>
       <div class="experience-details-container">
         <div class="about-containers">
+          
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h3 class="experience-sub-title">Frontend Development</h3>
             <div class="article-container">
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div class="article-text">
-                  <h3>HTML</h3>
-                  <p>Experienciado</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="Check" class="icon" />
+                <div class="article-text"><h3>HTML</h3><p>Avançado</p></div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div class="article-text">
-                  <h3>CSS</h3>
-                  <p>Experienciado</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="Check" class="icon" />
+                <div class="article-text"><h3>CSS/SASS</h3><p>Intermediário</p></div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div class="article-text">
-                  <h3>SASS</h3>
-                  <p>Intermediário</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="Check" class="icon" />
+                <div class="article-text"><h3>JavaScript</h3><p>Avançado</p></div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div class="article-text">
-                  <h3>JavaScript</h3>
-                  <p>Experienciado</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="Check" class="icon" />
+                <div class="article-text"><h3>React</h3><p>Avançado</p></div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div class="article-text">
-                  <h3>React</h3>
-                  <p>Intermediário</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="Check" class="icon" />
+                <div class="article-text"><h3>Next.js</h3><p>Estudando</p></div>
               </article>
             </div>
           </div>
+    
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h3 class="experience-sub-title">Ferramentas & Backend</h3>
             <div class="article-container">
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div class="article-text">
-                  <h3>PostgreSQL</h3>
-                  <p>Básico</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="Check" class="icon" />
+                <div class="article-text"><h3>Node JS</h3><p>Intermediário</p></div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div class="article-text">
-                  <h3>TypeScript</h3>
-                  <p>Básico</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="Check" class="icon" />
+                <div class="article-text"><h3>Git</h3><p>Intermediário</p></div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div class="article-text">
-                  <h3>Node JS</h3>
-                  <p>Intermediário</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="Check" class="icon" />
+                <div class="article-text"><h3>PostgreSQL</h3><p>Básico</p></div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div class="article-text">
-                  <h3>Git</h3>
-                  <p>Intermediário</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="Check" class="icon" />
+                <div class="article-text"><h3>Tailwind CSS</h3><p>Avançado</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Check" class="icon" />
+                <div class="article-text"><h3>MongoDB</h3><p>Avançado</p></div>
               </article>
             </div>
           </div>
+    
+          <div class="details-container">
+            <h3 class="experience-sub-title">Design & UI/UX</h3>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Check" class="icon" />
+                <div class="article-text"><h3>Figma</h3><p>Intermediário</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Check" class="icon" />
+                <div class="article-text"><h3>Responsive Design</h3><p>Avançado</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Check" class="icon" />
+                <div class="article-text"><h3>Adobe Suite</h3><p>Básico</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Check" class="icon" />
+                <div class="article-text"><h3>Prototipagem</h3><p>Avançado</p></div>
+              </article>
+            </div>
+          </div>
+    
         </div>
       </div>
       <img
         src="./assets/arrow.png"
-        alt="Arrow icon"
+        alt="Seta para projetos"
         class="icon arrow"
-        onclick="location.href='./#projects'"
+        onclick="location.href='#projects'"
       />
     </section>
+
     <section id="projects">
       <p class="section__text__p1">Alguns dos meus recentes</p>
-      <h1 class="title">Projetos</h1>
+      <h2 class="title">Projetos</h2>
       <div class="experience-details-container">
         <div class="about-containers-2">
+          
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/Projeto-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
+              <img src="./assets/Projeto-1.png" alt="Project 1" class="project-img" />
             </div>
-            <h1 class="project-h1-title">Informações do Projeto</h1>
+            <h3 class="project-h1-title">Register & Login Page</h3>
             <hr>
-            <h1 class="project-h1">Ano:</h1> <p class="project-p">2024</p>
-            <hr>
-            <h1 class="project-h1">Role:</h1> <p class="project-p">Front-end / Back-End Developer</p>
-            <h2 class="experience-sub-title project-title"></h2>
+            <p class="project-p"><strong>Ano:</strong> 2024</p>
+            <p class="project-p"><strong>Role:</strong> Full-stack</p>
             <div class="btn-container-project">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/LucasCanal/Register-Login-Welcome-Page'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn link"
-              >
-                Live Demo
-              </button>
-              <div class="modal">
-                <div class="conteudo-modal">
-                  <span class="fechar-modal">X</span>
-                  <video controls>
-                    <source id="video" src="./video/Projeto video demo.mp4" type="video/mp4">
-                  </video>
-                </div>
-              </div>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/LucasCanal/Register-Login-Welcome-Page'">Github</button>
+              <button class="btn btn-color-2 project-btn link">Live Demo</button>
             </div>
           </div>
+
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/Projeto-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
+              <img src="./assets/Projeto-2.png" alt="Project 2" class="project-img" />
             </div> 
-            <h1 class="project-h1-title">Informações do Projeto</h1>
+            <h3 class="project-h1-title">Menu Online</h3>
             <hr>
-            <h1 class="project-h1">Ano:</h1> <p class="project-p">2023</p>
-            <hr>
-            <h1 class="project-h1">Role:</h1> <p class="project-p">Front-end / Back-End Developer
-            <h2 class="experience-sub-title project-title"></h2>
+            <p class="project-p"><strong>Ano:</strong> 2023</p>
+            <p class="project-p"><strong>Role:</strong> Full-stack</p>
             <div class="btn-container-project">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/LucasCanal/menu-online'"
-              > 
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn link1"
-              >
-                Live Demo
-              </button>
-              <div class="modal1">
-                <div class="conteudo-modal">
-                  <span class="fechar-modal1">X</span>
-                  <video controls>
-                    <source id="video1" src="./video/Projeto-2 video demo.mp4" type="video/mp4">
-                  </video>
-                </div>
-              </div>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/LucasCanal/menu-online'">Github</button>
+              <button class="btn btn-color-2 project-btn link1">Live Demo</button>
             </div>
           </div>
+
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/Projeto-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
+              <img src="./assets/Projeto-3.png" alt="Project 3" class="project-img" />
             </div>
-            <h1 class="project-h1-title">Informações do Projeto</h1>
+            <h3 class="project-h1-title">Landing Page</h3>
             <hr>
-            <h1 class="project-h1">Ano:</h1> <p class="project-p">2023</p>
-            <hr>
-            <h1 class="project-h1">Role:</h1> <p class="project-p">Front-end Developer
-            <h2 class="experience-sub-title project-title"></h2>
+            <p class="project-p"><strong>Ano:</strong> 2023</p>
+            <p class="project-p"><strong>Role:</strong> Front-end</p>
             <div class="btn-container-project">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/LucasCanal/HomePage'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn link2"
-              >
-                Live Demo
-              </button>
-              <div class="modal2">
-                <div class="conteudo-modal">
-                  <span class="fechar-modal2">X</span>
-                  <video controls>
-                    <source id="video2" src="./video/Projeto-1 video demo.mp4" type="video/mp4">
-                  </video>
-                </div>
-              </div>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/LucasCanal/HomePage'">Github</button>
+              <button class="btn btn-color-2 project-btn link2">Live Demo</button>
             </div>
           </div>
+
         </div>
       </div>
       <img
         src="./assets/arrow.png"
-        alt="Arrow icon"
+        alt="Seta para contato"
         class="icon arrow"
-        onclick="location.href='./#contact'"
+        onclick="location.href='#contact'"
       />
     </section>
+
     <section id="contact">
       <p class="section__text__p1">Entre em</p>
-      <h1 class="title">Contato</h1>
+      <h2 class="title">Contato</h2>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="c_nall@outlook.com">c_nall@outlook.com</a></p>
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:c_nall@outlook.com">c_nall@outlook.com</a></p>
         </div>
         <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/lucas-canal-felix-9710b1199/">LinkedIn</a></p>
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/lucas-canal-felix-9710b1199/" target="_blank">LinkedIn</a></p>
         </div>
       </div>
     </section>
-    </section>
+
     <footer>
       <nav>
         <div class="nav-links-container">
@@ -396,8 +294,30 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2024. All Rights Reserved.</p>
+      <p>Copyright &#169; 2024 Lucas Canal. All Rights Reserved.</p>
     </footer>
+
+    <div class="modal">
+      <div class="conteudo-modal">
+          <button class="fechar-modal">Fechar</button>
+          <video id="video" src="./video/Projeto video demo.mp4" controls></video>
+      </div>
+    </div>
+
+    <div class="modal1">
+      <div class="conteudo-modal">
+          <button class="fechar-modal1">Fechar</button>
+          <video id="video2" src="./video/Projeto-2 video demo.mp4" controls></video>
+      </div>
+    </div>
+
+    <div class="modal2">
+      <div class="conteudo-modal">
+          <button class="fechar-modal2">Fechar</button>
+          <video id="video1" src="./video/Projeto-1 video demo.mp4" controls></video>
+      </div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
