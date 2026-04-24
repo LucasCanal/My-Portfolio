@@ -115,10 +115,21 @@
     flex-direction: column;
     align-items: center;
     width: 85%;
+    overflow: hidden;
   }
   .contact-info-container {
     width: 100%;
     justify-content: flex-start;
+    overflow: hidden;
+    min-width: 0;
+  }
+  .contact-info-container p,
+  .contact-info-container a {
+    overflow: hidden;
+    white-space: normal;
+    word-break: break-word;
+    max-width: 100%;
+    min-width: 0;
   }
   #profile {
     height: 100vh;
