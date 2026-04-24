@@ -424,7 +424,7 @@ section {
 article {
   display: flex;
   align-items: center;
-  width: 40rem;
+  width: 100%;
   justify-content: flex-start; 
   gap: 2rem;
 }
