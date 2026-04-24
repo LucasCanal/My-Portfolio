@@ -1,6 +1,4 @@
-/* MEDIA QUERIES */
-
-/* CSS BASE — adicionar fora das media queries no seu arquivo principal */
+/* CSS BASE */
 .section__pic-container {
   border-radius: 50%;
   overflow: hidden;
@@ -112,7 +110,6 @@
     padding: 0 1rem;
   }
 
-  /* CONTATO — coluna centralizada, itens um abaixo do outro */
   .contact-info-upper-container {
     display: flex;
     flex-direction: column;
@@ -209,13 +206,21 @@
     font-size: 1.2rem;
     margin-top: 1rem;
   }
+
+  /* AJUSTE AQUI: Espaçamento abaixo do título "Frontend Development" */
   .experience-sub-title {
     font-size: 1.2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem; /* Aumentado para dar mais espaço */
+    text-align: center;
   }
+
+  /* AJUSTE AQUI: Espaçamento entre os blocos de cada habilidade */
   .article-container {
-    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem; /* Cria espaço entre HTML, CSS, JavaScript, etc. */
   }
+
   .text-container p {
     font-size: 1rem;
     line-height: 1.4;
