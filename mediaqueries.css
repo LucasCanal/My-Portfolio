@@ -207,18 +207,16 @@
     margin-top: 1rem;
   }
 
-  /* AJUSTE AQUI: Espaçamento abaixo do título "Frontend Development" */
   .experience-sub-title {
-    font-size: 1.2rem;
-    margin-bottom: 2.5rem; /* Aumentado para dar mais espaço */
+    font-size: 1.3rem;
+    margin-bottom: 3rem; 
     text-align: center;
   }
 
-  /* AJUSTE AQUI: Espaçamento entre os blocos de cada habilidade */
   .article-container {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem; /* Cria espaço entre HTML, CSS, JavaScript, etc. */
+    gap: 2.2rem; /* Cria espaço entre HTML, CSS, JavaScript, etc. */
   }
 
   .text-container p {
