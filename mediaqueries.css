@@ -199,4 +199,21 @@
     height: 40px;
     font-size: 16px;
   }
+
+  /* --- NOVOS AJUSTES DE TEXTO E EXPERIÊNCIA --- */
+  
+  .text-container p {
+    font-size: 1rem;      /* Tamanho menor para a bio */
+    line-height: 1.4;    /* Espaçamento entre linhas mais compacto */
+    text-align: justify; /* Melhora a distribuição das palavras */
+  }
+
+  .experience-sub-title {
+    font-size: 1.2rem; 
+    margin-bottom: 1rem;
+  }
+
+  .article-container {
+    gap: 0.5rem;
+  }
 }
