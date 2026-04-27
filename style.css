@@ -65,9 +65,9 @@ nav {
 }
 
 .nav-links {
-  gap: 5rem;
+  gap: 6rem;
   list-style: none;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
 }
 
 a {
@@ -253,6 +253,7 @@ section {
   padding: 1rem;
   width: 9rem;
   border-radius: 2rem;
+  font-size: 17px;
 }
 
 .btn-color-1,
@@ -335,7 +336,7 @@ section {
 }
 
 .details-container p {
-  font-size: 0.95rem;
+  font-size: 1.5rem;
   line-height: 1.4;
 }
 
@@ -395,6 +396,7 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-top: 30px;
 }
 
 #experience .about-containers {
@@ -451,8 +453,6 @@ article .icon {
   height: 1.5rem;
 }
 
-/* PROJECTS SECTION - HOVER REMOVIDO CONFORME SOLICITADO */
-
 #projects {
   position: relative;
 }
@@ -476,6 +476,14 @@ article .icon {
 .project-title {
   margin: 1rem;
   color: black;
+}
+
+.project-h1-title {
+  font-size: 25px;
+}
+
+.project-p{
+  font-size: 30px;
 }
 
 .project-btn {
