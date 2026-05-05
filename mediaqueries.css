@@ -1,7 +1,5 @@
 /* ─────────────────────────────────────────
    ULTRA-WIDE (acima de 1400px)
-   Regra isolada para telas muito grandes.
-   Evita vazar para todos os tamanhos abaixo.
 ───────────────────────────────────────── */
 @media screen and (min-width: 1400px) {
   #profile {
@@ -32,7 +30,16 @@
     margin-top: 2rem;
   }
 
-  #profile,
+  #profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    height: auto;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
+
   .section-container {
     display: block;
   }
@@ -41,25 +48,50 @@
     display: none;
   }
 
-  section,
-  .section-container {
+  section {
     height: fit-content;
+    margin: 0 5%;
+    padding-top: 8vh;
   }
 
-  section {
-    margin: 0 5%;
+  .section-container {
+    height: fit-content;
   }
 
   .about-containers {
     flex-wrap: wrap;
   }
 
-  /* Foto de perfil centralizada no tablet */
   .section__pic-container {
     width: 220px;
     height: 220px;
     margin: 0 auto 1.5rem;
     min-width: unset;
+  }
+
+  /* Habilidades: reduz gap excessivo entre colunas */
+  #experience .about-containers {
+    gap: 2rem;
+  }
+
+  /* Projetos: 2 colunas em tablet */
+  .about-containers-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .color-container {
+    margin-bottom: 0;
+  }
+
+  /* Botões de projeto lado a lado */
+  .btn-container-project {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /* Texto da seção sobre */
+  .text-container p {
+    font-size: 1.4rem;
   }
 }
 
@@ -67,20 +99,65 @@
    TABLET PORTRAIT (até 768px)
 ───────────────────────────────────────── */
 @media screen and (max-width: 768px) {
+  section {
+    margin: 0 4%;
+    padding-top: 6vh;
+  }
+
   .section__pic-container {
     width: 180px;
     height: 180px;
   }
 
   .title {
-    font-size: 1.6rem;
+    font-size: 2.2rem;
   }
 
-  /* Garante que seções usem largura total com padding seguro */
-  section,
-  .section-container {
-    margin: 0 4%;
-    width: auto;
+  .section__text__p1 {
+    font-size: 1.4rem;
+  }
+
+  .section__text__p2 {
+    font-size: 1.4rem;
+  }
+
+  .nav-links {
+    gap: 3rem;
+    font-size: 1.5rem;
+  }
+
+  /* Habilidades: uma coluna */
+  #experience .about-containers {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  #experience .details-container {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  /* Contato: empilha */
+  .contact-info-upper-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  /* Projetos: 1 coluna em tablet portrait */
+  .about-containers-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .project-img {
+    width: 85%;
+  }
+
+  /* Footer */
+  footer .nav-links {
+    gap: 2rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -92,24 +169,30 @@
     display: none;
   }
 
-  /* Reset de margem e padding lateral consistente */
-  section,
-  .section-container {
+  section {
     margin: 0;
     width: 100%;
-    padding-inline: 1rem; /* equivalente a padding-left + padding-right */
+    padding-inline: 1.5rem;
+    padding-top: 5vh;
     box-sizing: border-box;
   }
 
+  .section-container {
+    margin: 0;
+    width: 100%;
+    padding-inline: 0;
+  }
+
+  /* Perfil */
   #profile {
     height: auto;
-    min-height: 60vh; /* garante espaço mínimo no mobile */
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem 1rem;
-    gap: 0.75rem;
+    padding: 3rem 1.5rem;
+    gap: 1rem;
   }
 
   .section__pic-container {
@@ -124,70 +207,130 @@
   }
 
   .section__text__p1 {
-    font-size: 10px;
+    font-size: 1.2rem; /* estava 10px — misturava unidades */
   }
 
   .section__text__p2 {
-    font-size: 15px;
+    font-size: 1.4rem; /* estava 15px */
   }
 
   .title {
+    font-size: 2rem;
     font-weight: 600;
   }
 
+  /* Botões */
   .btn-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* evita overflow se os botões forem largos */
+    flex-wrap: wrap;
     gap: 10px;
     margin-top: 1rem;
   }
 
-  .project-h1-title {
-    font-size: 10px;
-}
-
-
-  /* Imagens dos projetos ocupam largura total no mobile */
-  .project-img {
-    max-width: 100%;
+  .btn-color-1,
+  .btn-color-2 {
+    width: 140px;
+    height: 52px;
+    font-size: 1.5rem;
   }
 
-  .experience-sub-title {
+  /* Sobre */
+  .about-containers {
+    flex-direction: column;
+  }
+
+  .text-container p {
     font-size: 1.3rem;
-    margin-bottom: 2rem;
-    text-align: center;
+  }
+
+  /* Habilidades */
+  .experience-sub-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .article-container {
-    display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    align-items: center;
-    width: 100%; /* garante que ocupa o espaço todo */
+    gap: 1.2rem;
+    align-items: flex-start;
+    width: 100%;
   }
 
-  #contact,
+  /* Projetos: 1 coluna no mobile */
+  .about-containers-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .color-container {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .project-img {
+    width: 90%;
+  }
+
+  .project-title {
+    font-size: 1.6rem;
+  }
+
+  .project-p {
+    font-size: 1.4rem;
+  }
+
+  /* Removido: .project-h1-title { font-size: 10px } — era um valor absurdo */
+
+  .btn-container-project {
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+  }
+
+  /* Contato */
+  #contact {
+    height: fit-content;
+    padding: 3rem 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .contact-info-upper-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .contact-info-container {
+    margin: 0.5rem;
+  }
+
+  /* Footer */
   footer {
     height: fit-content;
     padding: 2rem 1rem;
   }
 
-  .contact-info-upper-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    width: 100%;
-  }
   footer .nav-links {
     display: none;
+  }
+
+  footer p {
+    font-size: 1.2rem;
+  }
+
+  /* Modal: vídeo em tela cheia no mobile */
+  video {
+    max-width: 95vw;
+    max-height: 50vh;
   }
 }
 
 /* ─────────────────────────────────────────
    MOBILE PEQUENO (até 375px)
-   Cobre iPhones SE, modelos mais antigos.
+   Cobre iPhones SE e modelos antigos.
 ───────────────────────────────────────── */
 @media screen and (max-width: 375px) {
   .section__pic-container {
@@ -196,11 +339,23 @@
   }
 
   .title {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
 
   section,
   .section-container {
     padding-inline: 0.75rem;
+  }
+
+  .btn-color-1,
+  .btn-color-2 {
+    width: 120px;
+    height: 46px;
+    font-size: 1.3rem;
+  }
+
+  .nav-links {
+    gap: 1.5rem;
+    font-size: 1.3rem;
   }
 }
