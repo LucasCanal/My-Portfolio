@@ -135,7 +135,7 @@
      display: block;
      padding: 12px 24px;
      text-align: center;
-     font-size: 1.8rem; /* era 1.5rem */
+     font-size: 1.8rem;
      color: black;
      text-decoration: none;
    }
@@ -187,12 +187,13 @@
      min-height: 500px;
    }
    
+   /* ✅ CORREÇÃO: tamanho responsivo com clamp em vez de 400px fixo */
    .section__pic-container {
      display: flex;
      justify-content: center;
      align-items: center;
-     height: 400px;
-     width: 400px;
+     width: clamp(200px, 25vw, 350px);
+     height: clamp(200px, 25vw, 350px);
      flex-shrink: 0;
    }
    
@@ -223,7 +224,7 @@
    }
    
    .title {
-     font-size: 4rem; /* era 3rem */
+     font-size: 4rem;
      text-align: center;
      color: #111;
    }
